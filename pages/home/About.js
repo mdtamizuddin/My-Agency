@@ -2,7 +2,7 @@ import Image from "next/image";
 import aboutImg from '../../Accets/Image/about.png'
 const About = () => {
     return (
-        <main className="mt-10">
+        <main className="lg:mt-10">
             <section className="container mx-auto flex flex-col lg:flex-row justify-between pt-10">
                 <div className="lg:w-[50%] sm-w-full flex items-center">
                     <Image src={aboutImg} alt="about image"/>
