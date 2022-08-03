@@ -1,6 +1,8 @@
 import Head from 'next/head'
+import Contact from '../components/Contact'
 import About from './home/About'
 import Header from './home/Header'
+import Service from './home/Service'
 // import '@fortawesome/fontawesome-svg-core/styles.css'
 
 
@@ -16,6 +18,8 @@ export default function Home() {
       <main >
         <Header />
         <About />
+        <Service />
+        <Contact />
       </main>
     </div>
   )
