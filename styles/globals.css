@@ -19,8 +19,137 @@ a {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
     background: black;
+  }
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+.mobile-manu {
+  padding: 30px;
+
+}
+
+.mobile-manu li {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.mobile-nav {
+  justify-content: center;
+  transition-duration: 500ms;
+}
+
+.mobile-manu li a:hover {
+  color: #DD4242;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.sm-row {
+  width: 50px;
+  height: 1px;
+  background-color: #A9AFC3;
+}
+.lg-row {
+  width: 150px;
+  height: 1px;
+  background-color: #A9AFC3;
+}
+
+.play-btn {
+  box-shadow: 0px 0px 20px 6px rgb(68, 68, 68);
+
+}
+
+
+
+.play-btn {
+  margin: 50px;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(207, 207, 204, 0.747);
+  animation: pulse 2s infinite;
+}
+
+
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(216, 216, 216, 0.4);
+  }
+
+  70% {
+    -webkit-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+  }
+
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(207, 204, 204, 0.4);
+    box-shadow: 0 0 0 0 rgba(224, 224, 221, 0.4);
+  }
+
+  70% {
+    -moz-box-shadow: 0 0 0 20px rgba(204, 169, 44, 0);
+    box-shadow: 0 0 0 20px rgba(204, 169, 44, 0);
+  }
+
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+  }
+}
+.bg-only{
+  height: 700px;
+  width: 550px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+  .header-head{
+    font-size: 40px !important;
+  }
+  .container{
+    max-width: 95%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .header-head{
+    font-size: 40px;
+  }
+  .container{
+    max-width: 95%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .bg-only{
+    width: 100%;
   }
 }
