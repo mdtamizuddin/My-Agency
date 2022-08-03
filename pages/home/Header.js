@@ -46,9 +46,9 @@ const Header = () => {
                 </div>
 
 
-                <div className="w-[50%] h-full mt-20 absolute right-0 hidden md:block">
+                <div className="w-[50%] h-full  absolute right-0 hidden md:block">
                     <div className="flex h-full items-center ">
-                        <div className='rounded-xl overflow-hidden'>
+                        <div className='rounded-xl overflow-hidden shadow-lg shadow-gray-600'>
                             <Image  src={images[number]} alt="" />
                         </div>
                     </div>

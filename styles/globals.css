@@ -124,7 +124,9 @@ h1 {
   justify-content: center;
   border-radius: 20px;
 }
-
+.header-head{
+  line-height: 66px !important;
+}
 
 
 
@@ -143,8 +145,15 @@ h1 {
   .header-head{
     font-size: 40px;
   }
+  .sm-w-full{
+    width: 100%;
+    padding: 20px;
+  }
   .container{
     max-width: 95%;
+  }
+  .bg-only{
+    width: 400px;
   }
 }
 
