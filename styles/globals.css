@@ -125,8 +125,8 @@ h5 {
 }
 
 .bg-only {
-  height: 700px;
-  width: 550px;
+  height: 600px;
+  width: 500px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -150,7 +150,9 @@ h5 {
   display: block;
 }
 
-
+.container{
+  max-width: 80%;
+}
 
 .contact-form input{
   background-color: transparent;
@@ -170,7 +172,16 @@ h5 {
 .contact-form input:focus{
   outline: none;
   border-bottom: 1px solid #DD4242;
+}
+.contact-form textarea:focus{
+  outline: none;
+  border-bottom: 1px solid #DD4242;
+}
 
+@media only screen and (max-width: 1300px) {
+  .container {
+    max-width: 90%;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -179,7 +190,15 @@ h5 {
   }
 
   .container {
-    max-width: 95%;
+    max-width: 90%;
+  }
+  .bg-only {
+    width: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
   }
 }
 
@@ -194,7 +213,7 @@ h5 {
   }
 
   .container {
-    max-width: 95%;
+    max-width: 90%;
   }
 
   .bg-only {
@@ -202,7 +221,7 @@ h5 {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .bg-only {
     width: 100%;
   }

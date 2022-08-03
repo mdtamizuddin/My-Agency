@@ -8,7 +8,7 @@ import seo from '../../Accets/Image/icons/seo.png'
 
 const Service = () => {
     return (
-        <div className="container mx-auto py-14">
+        <div className="container mx-auto py-14 mt-10">
             <h4 className="flex  items-center  text-accent uppercase text-sm">
                 <div className="sm-row mr-4"></div>
                 Our Services
@@ -17,7 +17,7 @@ const Service = () => {
                 We do everything
             </h1>
             <p className="text-accent mt-2">You may be interested in what we can offer you. More services you <br /> can find below. We do everything at a high level.</p>
-            <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 md:grid-cols-2 mt-14">
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-3 md:gap-10 md:grid-cols-2 mt-14">
                 <ServiceCard icon={web} name1={'Web'} name2={'Development'} />
                 <ServiceCard icon={uiUx} name1={'UI/UX And'} name2={' Brand Indentity'} />
                 <ServiceCard icon={app} name1={'App'} name2={'Development'} />

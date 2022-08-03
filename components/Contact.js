@@ -29,8 +29,8 @@ const Contact = () => {
 
     return (
         <div className="lg:py-20 container mx-auto">
-            <section className="flex justify-between">
-                <div className="bg-secondary  lg:w-[40%] rounded-xl px-5 py-10 h-auto">
+            <section className="flex justify-between flex-col lg:flex-row items-center">
+                <div className="bg-secondary w-full lg:w-[45%] rounded-xl px-5 py-10 h-auto">
                     <h4 className="flex  items-center  text-accent uppercase text-sm">
                         <div className="sm-row mr-4"></div>
                         let's get started
@@ -40,7 +40,7 @@ const Contact = () => {
                         Consultation
                     </h1>
                     <p className="text-accent text-mini mt-2">
-                        We always try to implement our creative ideas at the highest level. <br />
+                        We always try to implement our creative ideas at the highest level.
                         Tell us about your project and we will make it work.
                     </p>
 
@@ -61,8 +61,8 @@ const Contact = () => {
                         <button type="submit" className="btn mt-10 btn-outline btn-primary btn-md rounded-full px-7">Send Message</button>
                     </form>
                 </div>
-                <div className="w-[50%]">
-                    <Image src={contact} />
+                <div className="w-[50%] hidden lg:block">
+                    <Image  src={contact} />
                 </div>
             </section>
         </div>

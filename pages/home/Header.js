@@ -15,11 +15,11 @@ const Header = () => {
         number === 0 ? setNumber(images.length - 1) : setNumber(number - 1)
     }
     return (
-        <div className="w-full h-[80vh]">
-            <div className="container mx-auto h-full flex flex-col justify-center items-start relative">
+        <div className="w-full h-auto">
+            <div className="container mx-auto h-full flex flex-row  items-start relative">
 
-                <div className="z-10 lg:ml-5 bg-secondary bg-only">
-                    <h3 className="flex  items-center  text-accent uppercase text-sm">
+                <div className="z-10 lg:ml-5 mt-10 bg-secondary bg-only">
+                    <h3 className="flex  items-center text-accent uppercase text-sm">
                         <div className="sm-row mr-4"></div>
                         Creative Ideas
                     </h3>

@@ -5,9 +5,9 @@ const About = () => {
         <main className="lg:mt-10">
             <section className="container mx-auto flex flex-col lg:flex-row justify-between pt-10">
                 <div className="lg:w-[50%] sm-w-full flex items-center">
-                    <Image src={aboutImg} alt="about image"/>
+                    <Image loader={''} loading="lazy" src={aboutImg} alt="about image"/>
                 </div>
-                <div className="lg:w-[45%] z-50 w-full lg:py-10  flex flex-col justify-center items-start p-4 lg:p-0">
+                <div className="lg:w-[45%] z-50 w-full lg:py-10  flex flex-col justify-center items-start ">
                     <h3 className="flex  items-center  text-accent uppercase text-sm">
                         <div className="sm-row mr-4"></div>
                         about us
@@ -21,7 +21,7 @@ const About = () => {
                     <p className="text-accent">
                         We’ve got a lot of awards for our work and develop <br /> applications that became popular in the world. Every <br />morning in our company begins with hot coffee and a <br />stand-up. Discussion is an important thing in the <br />development process. Thus new ideas and ingenious <br />solutions are born. Then we get to work with renewed <br />vigor and inspiration. We are never bored.
                     </p>
-                    <button className="mt-7 py-1 border-b-2 hover:border-neutral text-primary border-primary">READ MORE 
+                    <button className="mt-7 py-1 border-b-2 hover:border-neutral text-primary border-primary transition delay-300 ">READ MORE 
                     <i className="fa-solid fa-arrow-right ml-3"></i>
                     </button>
                 </div>
