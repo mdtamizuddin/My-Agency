@@ -12,18 +12,18 @@ const WhyChoose = () => {
                                 <p className="mt-2">Setisfied Clients</p>
                             </div>
                             <div className="flex flex-col items-center p-5 bg-secondary h-40 rounded-sm justify-center mt-5">
-                                <h1 className="text-2xl font-bold">235 <sup className="text-primary ">+</sup></h1>
-                                <p className="mt-2">Setisfied Clients</p>
+                                <h1 className="text-2xl font-bold">55 <sup className="text-primary ">+</sup></h1>
+                                <p className="mt-2">Awards Winning Clients</p>
                             </div>
                         </div>
                         <div className="mt-10">
                             <div className="flex flex-col items-center p-5 bg-secondary h-40 rounded-sm justify-center ">
-                                <h1 className="text-2xl font-bold">235 <sup className="text-primary ">+</sup></h1>
-                                <p className="mt-2">Setisfied Clients</p>
+                                <h1 className="text-2xl font-bold">15 <sup className="text-primary ">+</sup></h1>
+                                <p className="mt-2">Team Members</p>
                             </div>
-                            <div className="flex flex-col items-center p-5 bg-secondary h-40 rounded-sm justify-center mt-5">
-                                <h1 className="text-2xl font-bold">235 <sup className="text-primary ">+</sup></h1>
-                                <p className="mt-2">Setisfied Clients</p>
+                            <div className="flex flex-col items-center p-5 bg-secondary h-40 rounded-sm st-card justify-center mt-5">
+                                <h1 className="text-2xl font-bold">205 <sup className="text-primary ">+</sup></h1>
+                                <p className="mt-2">Successful Prokect</p>
                             </div>
                         </div>
 
