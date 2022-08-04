@@ -32,13 +32,13 @@ const Contact = () => {
                     <form
                         onSubmit={handleSubmit(onSubmit)}
                         className="mt-14 p-4 contact-form">
-                        <div className="grid grid-cols-2 gap-5">
+                        <div className="grid grid-cols-1 md:grid-cols-2  gap-5">
                             <input
                                 {...register("name", { required: true })}
                                 type="text" placeholder="Name" />
                             <input
                                 {...register("email", { required: true })}
-                                className="bg-transparent" type="email" placeholder="Email Adress" />
+                                className="bg-transparent mt-7 lg:mt-0" type="email" placeholder="Email Adress" />
                         </div>
                         <textarea
                             {...register("message", { required: true })}

@@ -7,7 +7,7 @@ const About = () => {
                 <div className="lg:w-[50%] sm-w-full flex items-center">
                     <Image  loading="eager" src={aboutImg} alt="about image"/>
                 </div>
-                <div className="lg:w-[45%] z-50 w-full lg:py-10  flex flex-col justify-center items-start ">
+                <div className="lg:w-[45%]  w-full lg:py-10  flex flex-col justify-center items-start ">
                     <h3 className="flex  items-center  text-accent uppercase text-sm">
                         <div className="sm-row mr-4"></div>
                         about us

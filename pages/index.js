@@ -3,6 +3,7 @@ import Contact from '../components/Contact'
 import About from './home/About'
 import Header from './home/Header'
 import Service from './home/Service'
+import WhyChoose from './home/whyChoose'
 // import '@fortawesome/fontawesome-svg-core/styles.css'
 
 
@@ -20,9 +21,9 @@ export default function Home() {
         <About />
         <Service />
         <Contact />
+        <WhyChoose />
 
 
-       
 
       </main>
     </div>

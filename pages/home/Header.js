@@ -7,7 +7,9 @@ import img2 from '../../Accets/Image/web/website-2.png'
 import img3 from '../../Accets/Image/web/website-3.png'
 import img4 from '../../Accets/Image/web/website-4.png'
 import img5 from '../../Accets/Image/web/website-5.png'
+import Modal from '../../components/Modal';
 const Header = () => {
+    const [show, setShow] = useState(false)
     const images = [img1, img2, img3, img4, img5]
 
 
@@ -35,7 +37,9 @@ const Header = () => {
                     </h1>
                     <p className="text-accent mt-5">We create new technologies for your business thanks <br /> to our wonderful team of professionals.</p>
                     <div className="flex items-center mt-10">
-                        <button className="bg-primary play-btn  flex justify-center items-center rounded-full w-16 h-16 ">
+                        <button
+                            onClick={() => setShow(true)}
+                            className="bg-primary play-btn  flex justify-center items-center rounded-full w-16 h-16 ">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="{2}">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -76,6 +80,10 @@ const Header = () => {
 
                 </div>
             </div>
+            <Modal show={show} seShow={setShow}>
+                <iframe width={1280} height={720} src="https://www.youtube.com/embed/9exK6rLAR7g" title="ReactJS Interview Questions and Answers | ReactJS Tutorial | ReactJS Redux Training | Edureka" frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+
+            </Modal>
         </div>
     );
 }
