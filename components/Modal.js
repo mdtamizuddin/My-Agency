@@ -4,7 +4,6 @@ const Modal = ({ show, seShow, children }) => {
             {
                 show ?
                     <div>
-
                         <div className={`absolute w-full h-screen bg-secondary top-0 z-50 animate__animated  delay-200 ${show ? 'animate__fadeIn' : 'animate__fadeOut'}`}>
                             <button
                                 onClick={() => seShow(false)}
