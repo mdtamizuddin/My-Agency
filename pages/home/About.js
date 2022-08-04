@@ -10,7 +10,7 @@ const About = () => {
                 <div className="lg:w-[45%]  w-full lg:py-10  flex flex-col justify-center items-start ">
                     <h3 className="flex  items-center  text-accent uppercase text-sm">
                         <div className="sm-row mr-4"></div>
-                        about us
+                        about US
                     </h3>
                     <h1 className="lg:text-5xl header-head md:text-4xl text-5xl  mt-5 font-bold">
                     We are Experts <br /> in Our Field
