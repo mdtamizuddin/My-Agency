@@ -20,6 +20,10 @@ export default function Home() {
         <About />
         <Service />
         <Contact />
+
+
+       
+
       </main>
     </div>
   )

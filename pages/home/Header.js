@@ -1,12 +1,16 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
-import img1 from '../../Accets/Image/web/website-1.jpg'
-import img2 from '../../Accets/Image/web/website-2.jpg'
-import img3 from '../../Accets/Image/web/website-3.webp'
+import { Autoplay } from 'swiper';
+import { Swiper, SwiperSlide } from "swiper/react";
+import img1 from '../../Accets/Image/web/website-1.png'
+import img2 from '../../Accets/Image/web/website-2.png'
+import img3 from '../../Accets/Image/web/website-3.png'
 import img4 from '../../Accets/Image/web/website-4.png'
-import img5 from '../../Accets/Image/web/website-5.jpg'
+import img5 from '../../Accets/Image/web/website-5.png'
 const Header = () => {
     const images = [img1, img2, img3, img4, img5]
+
+
     const [number, setNumber] = useState(0)
     const enc = () => {
         images.length - 1 === number ? setNumber(0) : setNumber(number + 1)
@@ -14,9 +18,11 @@ const Header = () => {
     const dec = () => {
         number === 0 ? setNumber(images.length - 1) : setNumber(number - 1)
     }
+
+
     return (
         <div className="w-full h-auto">
-            <div className="container mx-auto h-full flex flex-row  items-start relative">
+            <div className="container mx-auto h-full flex lg:flex-row flex-col  items-center justify-between relative">
 
                 <div className="z-10 lg:ml-5 mt-10 bg-secondary bg-only">
                     <h3 className="flex  items-center text-accent uppercase text-sm">
@@ -46,24 +52,30 @@ const Header = () => {
                 </div>
 
 
-                <div className="w-[50%] h-full  absolute right-0 hidden md:block">
-                    <div className="flex h-full items-center ">
-                        <div className='rounded-xl overflow-hidden shadow-lg shadow-gray-600'>
-                            <Image  src={images[number]} alt="" />
-                        </div>
-                    </div>
-                    <div className="flex justify-end ">
-                        <button
-                            onClick={dec}
-                            className="border-b-2 hover:border-primary hover:text-primary font-bold w-16 flex justify-start">Prev</button>
+                <div className="lg:w-[50%] w-full mt-5 md:flex items-center justify-center">
 
-                        <button
-                            onClick={enc}
-                            className="border-b-2 hover:border-primary hover:text-primary font-bold w-16 flex justify-end ml-5">Next</button>
+                    <div className='rounded-xl overflow-hidden flex justify-center items-center'>
+                        <Swiper
+                            spaceBetween={30}
+                            centeredSlides={true}
+                            autoplay={{
+                                delay: 3500,
+                                disableOnInteraction: false,
+                            }}
+                            modules={[Autoplay]}
+                            className="mySwiper"
+                        >
+                            {
+                                images.map((img, index) => <SwiperSlide key={index}>
+                                    <Image src={img} alt="" />
+                                </SwiperSlide>)
+                            }
+
+                        </Swiper>
                     </div>
+
                 </div>
             </div>
-
         </div>
     );
 }
