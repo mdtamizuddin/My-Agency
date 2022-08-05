@@ -14,12 +14,7 @@ const Header = () => {
 
 
     const [number, setNumber] = useState(0)
-    const enc = () => {
-        images.length - 1 === number ? setNumber(0) : setNumber(number + 1)
-    }
-    const dec = () => {
-        number === 0 ? setNumber(images.length - 1) : setNumber(number - 1)
-    }
+
 
 
     return (
@@ -70,8 +65,11 @@ const Header = () => {
                             className="mySwiper"
                         >
                             {
-                                images.map((img, index) => <SwiperSlide key={index}>
-                                    <Image src={img} alt="" />
+                                slides.map((img, index) => <SwiperSlide key={index}>
+                                    <Image src={img} alt="" 
+                                    width={800} height={550}
+                                    loading="eager"
+                                    />
                                 </SwiperSlide>)
                             }
 
@@ -89,3 +87,11 @@ const Header = () => {
 }
 
 export default Header;
+
+const slides = [
+    "https://firebasestorage.googleapis.com/v0/b/agency-89d42.appspot.com/o/web%2Fwebsite-1.png?alt=media&token=d37c8292-8e99-4777-a31a-ec22ba34837c",
+    "https://firebasestorage.googleapis.com/v0/b/agency-89d42.appspot.com/o/web%2Fwebsite-2.png?alt=media&token=e3f7ea47-14e8-4741-a4a8-788c895c6a98",
+    "https://firebasestorage.googleapis.com/v0/b/agency-89d42.appspot.com/o/web%2Fwebsite-3.png?alt=media&token=a4b07707-f01e-4041-b03c-3781841af82b",
+    "https://firebasestorage.googleapis.com/v0/b/agency-89d42.appspot.com/o/web%2Fwebsite-4.png?alt=media&token=44023fdf-001c-4f86-a0e0-6df8361dbd59",
+    "https://firebasestorage.googleapis.com/v0/b/agency-89d42.appspot.com/o/web%2Fwebsite-5.png?alt=media&token=e9f4b732-3d66-4d2a-9f95-92843bc43c76"
+]
