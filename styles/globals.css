@@ -80,7 +80,8 @@ h5 {
   box-shadow: 0px 0px 20px 6px rgb(68, 68, 68);
 
 }
-.text-mini{
+
+.text-mini {
   font-size: 18px;
 }
 
@@ -142,24 +143,25 @@ h5 {
 /* service Section  */
 /* service Section  */
 
-.hover-Hide{
+.hover-Hide {
   display: none;
 }
 
-.btn-service:hover .hover-Hide{
+.btn-service:hover .hover-Hide {
   display: block;
 }
 
-.container{
+.container {
   max-width: 80%;
 }
 
-.contact-form input{
+.contact-form input {
   background-color: transparent;
   border-bottom: 1px solid #A9AFC3;
   padding: 8px;
 }
-.contact-form textarea{
+
+.contact-form textarea {
   background-color: transparent;
   border-bottom: 1px solid #A9AFC3;
   padding: 8px;
@@ -169,11 +171,12 @@ h5 {
 }
 
 
-.contact-form input:focus{
+.contact-form input:focus {
   outline: none;
   border-bottom: 1px solid #DD4242;
 }
-.contact-form textarea:focus{
+
+.contact-form textarea:focus {
   outline: none;
   border-bottom: 1px solid #DD4242;
 }
@@ -182,6 +185,7 @@ h5 {
   .container {
     max-width: 90%;
   }
+
 }
 
 @media only screen and (max-width: 1200px) {
@@ -189,9 +193,14 @@ h5 {
     font-size: 40px !important;
   }
 
+  .portfolio-container {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
   .container {
     max-width: 90%;
   }
+
   .bg-only {
     width: 400px;
     padding: 20px;
@@ -207,6 +216,10 @@ h5 {
     font-size: 40px;
   }
 
+  .port-card {
+    height: 450px !important;
+  }
+
   .sm-w-full {
     width: 100%;
     padding: 20px;
@@ -219,19 +232,40 @@ h5 {
   .bg-only {
     width: 100%;
   }
+
+  .portfolio-container {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
 }
 
 @media only screen and (max-width: 700px) {
   .bg-only {
     width: 100%;
   }
+
+  .portfolio-container {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
 }
 
 
-.overlay{
+.overlay {
   display: none;
   padding: 30px;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: column;
+
 }
-.port-card:hover .overlay{
-  display: block;
+
+.port-card {
+  height: 400px;
+}
+
+.port-card:hover .overlay {
+  display: flex;
+}
+
+.portfolio-container {
+  grid-template-columns: repeat(4, 1fr);
 }

@@ -2,7 +2,7 @@
 
 const WhyChoose = () => {
     return (
-        <div className="h-[80vh]">
+        <div className="">
             <section className="container mx-auto flex flex-col lg:flex-row justify-between pt-10 mt-10">
                 <div className="lg:w-[50%] sm-w-full flex items-center justify-center">
                     <div className="grid grid-cols-2 gap-5">
