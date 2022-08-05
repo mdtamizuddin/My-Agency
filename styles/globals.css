@@ -181,6 +181,16 @@ h5 {
   border-bottom: 1px solid #DD4242;
 }
 
+@media only screen and (max-width: 1500px) {
+  .container {
+    max-width: 90% !important;
+  }
+
+  .portfolio-container {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
 @media only screen and (max-width: 1300px) {
   .container {
     max-width: 90%;
@@ -193,9 +203,7 @@ h5 {
     font-size: 40px !important;
   }
 
-  .portfolio-container {
-    grid-template-columns: repeat(3, 1fr) !important;
-  }
+
 
   .container {
     max-width: 90%;
@@ -268,4 +276,16 @@ h5 {
 
 .portfolio-container {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.blog-card {
+  width: 470px;
+  height: 480px;
+  background-image: url('https://i.ibb.co/hBv2FGM/attachment-123748205.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  display: flex;
+  align-items: flex-end;
+
 }
