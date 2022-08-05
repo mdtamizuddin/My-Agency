@@ -228,6 +228,10 @@ h5 {
 }
 
 
-.st-card{
-  
+.overlay{
+  display: none;
+  padding: 30px;
+}
+.port-card:hover .overlay{
+  display: block;
 }

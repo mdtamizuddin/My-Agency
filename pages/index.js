@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Contact from '../components/Contact'
 import About from './home/About'
 import Header from './home/Header'
+import Portfolio from './home/Portfolio'
 import Service from './home/Service'
 import WhyChoose from './home/whyChoose'
 // import '@fortawesome/fontawesome-svg-core/styles.css'
@@ -22,7 +23,7 @@ export default function Home() {
         <Service />
         <Contact />
         <WhyChoose />
-
+        <Portfolio />
 
 
       </main>

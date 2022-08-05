@@ -8,7 +8,7 @@ import seo from '../../Accets/Image/icons/seo.png'
 
 const Service = () => {
     return (
-        <div className="container mx-auto py-14 mt-10">
+        <div className="container mx-auto py-14 mt-10 h-[80vh]">
             <h4 className="flex  items-center  text-accent uppercase text-sm">
                 <div className="sm-row mr-4"></div>
                 Our Services
