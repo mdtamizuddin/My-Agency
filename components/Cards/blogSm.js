@@ -3,10 +3,12 @@ import Image from "next/image";
 const BlogSm = () => {
     return (
         <div className="flex items-center">
-            <Image src={'https://i.ibb.co/6yzMLx4/doctor5.png'} alt=""
-                width={130}
-                height={150}
-            />
+            <div className="shadow-md shadow-secondary">
+                <Image src={'https://i.ibb.co/6yzMLx4/doctor5.png'} alt=""
+                    width={130}
+                    height={150}
+                />
+            </div>
             <div className="ml-5">
                 <div className="flex items-center">
                     <span className="px-3 py-1 bg-primary">Corporate</span>
