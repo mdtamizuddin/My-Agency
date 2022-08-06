@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Contact from '../components/Contact'
+import Footer from '../components/Footer'
 import About from './home/About'
 import Header from './home/Header'
 import Portfolio from './home/Portfolio'
@@ -26,7 +27,7 @@ export default function Home() {
         <WhyChoose />
         <Portfolio />
         <RecentPosts />
-
+        <Footer />
       </main>
     </div>
   )

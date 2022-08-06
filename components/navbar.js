@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useState } from "react";
+import Logo from "./Logo";
 
 const Navbar = () => {
     const [show, setShow] = useState(false)
@@ -8,9 +9,7 @@ const Navbar = () => {
             <nav className="navbar lg:container mx-auto py-3">
                 <div className="flex-1 justify-between lg:justify-start">
                     <Link href={'/'} >
-                        <span className="btn btn-ghost normal-case text-3xl">
-                            CO <span className="text-primary">-</span> AG
-                        </span>
+                        <Logo />
                     </Link>
 
                     <button

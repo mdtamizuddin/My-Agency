@@ -254,6 +254,7 @@ h5 {
   .portfolio-container {
     grid-template-columns: repeat(1, 1fr) !important;
   }
+
   .blog-card {
     width: 100% !important;
   }
@@ -290,5 +291,28 @@ h5 {
   border-radius: 5px;
   display: flex;
   align-items: flex-end;
+
+}
+
+.input-my {
+  background-color: transparent;
+  border-bottom: #9c9c9c 1px solid;
+  width: 80%;
+  padding: 7px;
+}
+.input-my:focus{
+  outline: none;
+  border-bottom: #DD4242 1px solid;
+}
+.play-btn-sm {
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(207, 207, 204, 0.747);
+
+}
+
+.play-btn-sm:hover {
+  animation: pulse 1.5s infinite;
+}
+.avater{
 
 }
