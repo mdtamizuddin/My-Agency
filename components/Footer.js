@@ -23,7 +23,7 @@ const Footer = () => {
                         <button
 
                             className="bg-primary play-btn-sm  flex justify-center items-center rounded-full w-14 h-14 ">
-                            <i class="fa-solid fa-paper-plane"></i>
+                            <i className="fa-solid fa-paper-plane"></i>
                         </button>
                     </div>
                 </div>
